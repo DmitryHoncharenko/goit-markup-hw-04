@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -64,7 +65,12 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="btn">Заказать услугу</button>
+          <button class="btn" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close>Закрыть услугу</button>
+            </div>
+          </div>
         </div>
       </section>
       <div class="speciality-color">
@@ -471,7 +477,7 @@
             </address>
           </div>
           <div class="adress-social">
-            <h3 class="item-title">присоединяйтесь</h3>
+            <h3 class="item-title-footer">присоединяйтесь</h3>
             <ul class="list social-footer">
               <li class="social-icons-item">
                 <a
@@ -529,7 +535,7 @@
           </div>
 
           <section class="footer-position">
-            <h3 class="item-title">Подпишитесь на рассылку</h3>
+            <h3 class="item-title-footer">Подпишитесь на рассылку</h3>
             <div class="last-footer">
               <p class="footer-border">E-mail</p>
               <button class="footer-button">
@@ -542,5 +548,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
